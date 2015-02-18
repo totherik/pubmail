@@ -1,6 +1,6 @@
 {
   "name": "pubmail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send email upon npm publish.",
   "main": "index.js",
   "bin": {
