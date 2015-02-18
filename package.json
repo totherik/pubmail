@@ -4,7 +4,7 @@
   "description": "Send email upon npm publish.",
   "main": "index.js",
   "bin": {
-    "pubmail": "dist/pubmail.js"
+    "pubmail": "dist/bin/pubmail.js"
   },
   "directories": {
     "test": "test"
