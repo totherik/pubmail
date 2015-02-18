@@ -1,0 +1,35 @@
+{
+  "name": "pubmail",
+  "version": "1.0.0",
+  "description": "Send email upon npm publish.",
+  "main": "index.js",
+  "bin": {
+    "pubmail": "dist/pubmail.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "prepublish": "npm run compile",
+    "compile": "babel --optional selfContained --modules common --out-dir dist index.js lib/*.js bin/*.js",
+    "test": "npm run compile && babel-node test/harness.js test/*-test.js"
+  },
+  "keywords": [
+    "npm",
+    "publish",
+    "email"
+  ],
+  "author": "Erik Toth <totherik@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-runtime": "^4.3.0",
+    "dbrickashaw": "^5.0.2",
+    "disclose": "^1.0.0",
+    "minimist": "^1.1.0",
+    "nodemailer": "^1.3.0",
+    "zmq": "^2.10.0"
+  },
+  "devDependencies": {
+    "babel": "^4.3.0"
+  }
+}
