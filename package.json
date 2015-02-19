@@ -31,5 +31,13 @@
   },
   "devDependencies": {
     "babel": "^4.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/totherik/pubmail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/totherik/pubmail/issues"
+  },
+  "homepage": "https://github.com/totherik/pubmail"
 }
