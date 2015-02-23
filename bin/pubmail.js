@@ -38,8 +38,7 @@ socket.on('error', (err) => {
     log.error(['socket'], err);
 });
 
-socket.on('message', function(type/*, identity*/, event) {
-    type = type.toString();
+socket.on('message', function(_/*, identity*/, event) {
     event = JSON.parse(event.toString());
 
     log.info(['publish'], event.id);
